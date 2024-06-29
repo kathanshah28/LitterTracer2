@@ -3,49 +3,253 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garbage Management System</title>
+  <title>Litter-Tracer</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff; /* Navbar text color */
+    }
+    nav.navbar-custom {
+      background-color: #410000; /* Navbar background color */
+    }
+    .btn-custom {
+      background-color: #410000; /* Button background color */
+      border-color: #211212; /* Button border color */
+      color: #fff; /* Button text color */
+    }
+    .btn-custom:hover {
+      background-color: #211212; /* Button background color on hover */
+      border-color: #ec971f; /* Button border color on hover */
+      color: #fff; /* Button text color on hover */
+    }
+    #Literimg {
+      display: block;
+      margin: 0 auto;
+      width: 400px;
+    }
+    .contact-card {
+      background-color: #f8f9fa; /* Contact card background color */
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-card h3 {
+      color: #343a40; /* Contact card heading color */
+      font-size: 1.5rem;
+    }
+    .contact-card p {
+      color: #6c757d; /* Contact card text color */
+      font-size: 1.1rem;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .about-section {
+      background-color: #e9ecef; /* Background color for the about section */
+      padding: 60px 0;
+    }
+    .about-heading {
+      font-size: 2.5rem;
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .about-text {
+      color: #6c757d;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .feature-list {
+      margin-top: 40px;
+    }
+    .feature-list h4 {
+      color: #343a40;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .feature-list ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .team-section {
+      background-color: #ffffff; /* Background color for the team section */
+      padding: 60px 0;
+    }
+    .team-heading {
+      font-size: 2.5rem;
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .team-member {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .team-member h3 {
+      color: #343a40;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .team-member p {
+      color: #6c757d;
+      font-size: 1.1rem;
+    }
+    .call-to-action {
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Garbage Management System</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-custom navbar-custom">
+  <a class="navbar-brand" href="#">Litter-Tracer</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-section">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contacts">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Main Content -->
-  <div class="container mt-4">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the Garbage Management System</h1>
-      <p class="lead">Efficiently manage garbage collection and cleanliness in your community.</p>
-      <hr class="my-4">
-      <p>Report litter, track cleanup progress, and schedule pickups easily.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+<!-- Main Content -->
+<div class="container mt-4">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the Garbage Management System</h1>
+    <p class="lead">
+      Efficiently manage garbage collection and cleanliness in your
+      community.
+    </p>
+    <hr class="my-4"/>
+    <p>
+      Report litter, track cleanup progress, and schedule pickups easily.
+    </p>
+    <img
+      id="Literimg"
+      src="media\Littering.jpg"
+      class="img-fluid"
+      alt="An image of Litter Scattered around"
+    />
+    <a class="btn btn-custom btn-lg" href="#" role="button">Get Started</a>
+  </div>
+</div>
+
+<!-- About Section -->
+<div id="about-section" class="about-section">
+  <div class="container">
+    <h2 class="about-heading">About Litter-Tracer</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="about-text">
+          Litter-Tracer is a cutting-edge platform dedicated to enhancing urban cleanliness and efficiency in garbage management. Our mission is to empower communities to tackle litter issues effectively through innovative technology solutions.
+        </p>
+        <div class="feature-list">
+          <h4>Our Goals</h4>
+          <ul>
+            <li>Reduce litter and improve cleanliness in urban areas.</li>
+            <li>Optimize garbage collection routes and schedules to maximize efficiency.</li>
+            <li>Promote recycling and sustainable waste management practices.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="media/about-image.jpg" class="img-fluid" alt="About Image">
+      </div>
     </div>
   </div>
+</div>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Team Section -->
+<div class="team-section">
+  <div class="container">
+    <h2 class="team-heading">Meet Our Team</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="team-member">
+          <img src="media/team-member1.jpg" alt="Team Member 1">
+          <h3>Niranshu Mittal</h3>
+          <p>Backend Developer</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="team-member">
+          <img src="media/team-member2.jpg" alt="Team Member 2">
+          <h3>Ansh Patel</h3>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="team-member">
+          <img src="media/team-member3.jpg" alt="Team Member 3">
+          <h3>Kathan Shah</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Details -->
+<div id = 'Contacts' class="container mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="contact-card text-center p-4">
+        <h3>Contact Details 1</h3>
+        <p>Email: <a href="mailto:niranshumittal2004@gmail.com" style="color: #410000;">niranshumittal2004@gmail.com</a><br>Phone: +91 9913625550</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contact-card text-center p-4">
+        <h3>Contact Details 2</h3>
+        <p>Email: <a href="mailto:anshpatel.dpsg123@gmail.com" style="color: #410000;">anshpatel.dpsg123@gmail.com</a><br>Phone: +91 9726159385</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contact-card text-center p-4">
+        <h3>Contact Details 3</h3>
+        <p>Email: <a href="mailto:example3@example.com" style="color: #410000;">example3@example.com</a><br>Phone: +91 </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="call-to-action">
+  <div class="container">
+    <h2>Join Us in Creating Cleaner Communities</h2>
+    <p>Together, we can make a difference. Get involved with Litter-Tracer today!</p>
+    <a class="btn btn-custom btn-lg" href="#" role="button">Get Started</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
