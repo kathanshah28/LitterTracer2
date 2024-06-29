@@ -109,6 +109,19 @@
     .call-to-action {
       text-align: center;
       margin-top: 60px;
+      margin-bottom: 60px; /* Added margin bottom to create space from footer */
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer p {
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -155,7 +168,7 @@
       class="img-fluid"
       alt="An image of Litter Scattered around"
     />
-    <a class="btn btn-custom btn-lg" href="#" role="button">Get Started</a>
+    <a class="btn btn-custom btn-lg" href="login.html" role="button">Get Started</a>
   </div>
 </div>
 
@@ -178,7 +191,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <img src="media/about-image.jpg" class="img-fluid" alt="About Image">
+        <img src="media\sealitterjpg.jpg" class="img-fluid" alt="About Image">
       </div>
     </div>
   </div>
@@ -191,21 +204,21 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="team-member">
-          <img src="media/team-member1.jpg" alt="Team Member 1">
+          <!-- <img src="media/team-member1.jpg" alt="Team Member 1"> -->
           <h3>Niranshu Mittal</h3>
           <p>Backend Developer</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="team-member">
-          <img src="media/team-member2.jpg" alt="Team Member 2">
+          <!-- <img src="media/team-member2.jpg" alt="Team Member 2"> -->
           <h3>Ansh Patel</h3>
           <p>Frontend Developer</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="team-member">
-          <img src="media/team-member3.jpg" alt="Team Member 3">
+          <!-- <img src="media/team-member3.jpg" alt="Team Member 3"> -->
           <h3>Kathan Shah</h3>
           <p>Project Manager</p>
         </div>
@@ -215,24 +228,24 @@
 </div>
 
 <!-- Contact Details -->
-<div id = 'Contacts' class="container mt-4">
+<div id="Contacts" class="container mt-4">
   <div class="row">
     <div class="col-md-4">
       <div class="contact-card text-center p-4">
-        <h3>Contact Details 1</h3>
+        <h3>Niranshu Mittal</h3>
         <p>Email: <a href="mailto:niranshumittal2004@gmail.com" style="color: #410000;">niranshumittal2004@gmail.com</a><br>Phone: +91 9913625550</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="contact-card text-center p-4">
-        <h3>Contact Details 2</h3>
+        <h3>Ansh Patel</h3>
         <p>Email: <a href="mailto:anshpatel.dpsg123@gmail.com" style="color: #410000;">anshpatel.dpsg123@gmail.com</a><br>Phone: +91 9726159385</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="contact-card text-center p-4">
-        <h3>Contact Details 3</h3>
-        <p>Email: <a href="mailto:example3@example.com" style="color: #410000;">example3@example.com</a><br>Phone: +91 </p>
+        <h3>Kathan Shah</h3>
+        <p>Email: <a href="mailto:kathanshah2004@gmail.com" style="color: #410000;">kathanshah2004@gmail.com</a><br>Phone: +91 7284012487</p>
       </div>
     </div>
   </div>
@@ -243,9 +256,16 @@
   <div class="container">
     <h2>Join Us in Creating Cleaner Communities</h2>
     <p>Together, we can make a difference. Get involved with Litter-Tracer today!</p>
-    <a class="btn btn-custom btn-lg" href="#" role="button">Get Started</a>
+    <a class="btn btn-custom btn-lg" href="login.html" role="button">Get Started</a>
   </div>
 </div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 Litter-Tracer. All rights reserved.</p>
+  </div>
+</footer>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
